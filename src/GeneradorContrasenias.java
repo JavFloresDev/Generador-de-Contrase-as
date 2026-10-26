@@ -17,7 +17,7 @@ public class GeneradorContrasenias {
         System.out.println("Generar un contraseña segura\nescribir 'salir' para hacerlo.");
         while (!generar) {
             try{
-                System.out.print("Ingrese longitud de contraseña\n---> ");cantidad = entrada.nextInt();
+                System.out.print("_________________________________________\nIngrese longitud de contraseña\n---> ");cantidad = entrada.nextInt();
             }catch(Exception e){
                 String palabra=entrada.next().toLowerCase();
                 if("salir".equals(palabra)){
@@ -39,6 +39,6 @@ public class GeneradorContrasenias {
                 generar=true;
             }
         }
-        System.out.println("Adios...");
+        System.out.println("_________________________________________\nAdios...");
     }
 }
